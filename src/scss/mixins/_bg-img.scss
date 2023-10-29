@@ -1,0 +1,9 @@
+$pathImg: "../img/";
+$formatImg: "webp";
+
+@mixin bg-img($imgName) {
+	background-image: url("#{$pathImg}#{$imgName}.#{$formatImg}");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}

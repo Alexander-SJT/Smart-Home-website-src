@@ -1,0 +1,81 @@
+.control {
+	padding-top: clamp-px(40, 60);
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__info {
+		position: sticky;
+		top: 12px;
+	}
+
+	&__notes {
+		@extend %notes-style;
+	}
+
+	&__title {
+		max-width: 375px;
+		margin: 22px 0;
+		@extend %title-style;
+	}
+
+	&__descr {
+		@extend %base-text-style;
+	}
+
+	&__content {
+		width: min(869px, 100%);
+	}
+
+	&__item {
+		display: flex;
+		border-top: 1px solid $color-title;
+		height: 236px;
+		&:last-child {
+			border-bottom: 1px solid $color-title;
+		}
+		&:nth-child(even) {
+			.control__item-content {
+				width: 100%;
+			}
+		}
+
+		&:nth-child(odd) {
+			.control__item-content {
+				width: 120%;
+			}
+		}
+	}
+
+	&__item-content {
+		padding: clamp-px(14, 28);
+	}
+
+	&__images {
+		margin-bottom: -2px;
+	}
+
+	&__picture {
+		width: 100%;
+		display: flex;
+		border-left: 1px solid $color-title;
+		justify-content: flex-end;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__picture--end-position {
+		padding-top: 8px;
+		align-items: flex-end;
+	}
+
+	&__item-title {
+		margin-bottom: 12px;
+		@extend %h3-title-style;
+	}
+
+	&__item-descr {
+		@extend %base-text-style;
+	}
+}

@@ -1,0 +1,117 @@
+.footer {
+	padding-bottom: clamp-px(50, 120);
+	&__wrapper {
+		display: flex;
+		gap: clamp-px(20, 76);
+		justify-content: space-between;
+	}
+
+	&__right-block {
+		@extend %base-text-style;
+
+		display: flex;
+		gap: clamp-px(20, 120);
+		color: #1d1e1e;
+	}
+
+	&__logo-link {
+		display: block;
+		margin-bottom: clamp-px(20, 40);
+		font-size: clamp-px(16, 20);
+		span {
+			color: $color-accent;
+		}
+	}
+
+	&__socials {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+	}
+
+	&__icon {
+		transition: fill 0.3s ease-in-out;
+	}
+
+	&__icon-link {
+		transition: fill 0.3s ease-in-out;
+
+		@media (any-hover: hover) {
+			&:hover {
+				.footer__icon {
+					fill: $color-accent;
+				}
+			}
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	&__name {
+		display: block;
+		margin-bottom: clamp-px(6, 12);
+		font-size: clamp-px(20, 24);
+	}
+
+	&__place {
+		font-style: normal;
+	}
+
+	&__link--phone {
+		border-bottom: 2px solid transparent;
+		transition: border-color 0.3s ease-in-out;
+		&::before {
+			@include bg-svg("phone");
+
+			content: "";
+
+			display: inline-block;
+
+			width: 22px;
+			height: 22px;
+			margin-right: 12px;
+
+			vertical-align: middle;
+
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				border-color: $color-title;
+			}
+		}
+	}
+
+	&__link--mail {
+		border-bottom: 2px solid transparent;
+		transition: border-color 0.3s ease-in-out;
+		&::before {
+			@include bg-svg("mail");
+
+			content: "";
+
+			display: inline-block;
+
+			width: 22px;
+			height: 22px;
+			margin-right: 12px;
+
+			vertical-align: middle;
+
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				border-color: $color-title;
+			}
+		}
+	}
+}

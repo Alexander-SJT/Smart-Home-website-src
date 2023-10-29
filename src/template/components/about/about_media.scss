@@ -1,0 +1,78 @@
+@media (max-width: 767px) {
+	.about {
+		&__box {
+			flex-wrap: wrap;
+		}
+
+		&__item--light {
+			width: 100%;
+			background: url(../img/about/light.webp), $color-input-bg;
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			background-size: 33%;
+		}
+
+		&__item--safe {
+			background: url(../img/about/safe.webp), $color-input-bg;
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			background-size: 40%;
+		}
+
+		&__item--drapes {
+			background: url(../img/about/drapes.webp), $color-input-bg;
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			background-size: 44%;
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 540px) {
+	.about {
+		&__item--media {
+			background: url(../img/about/media.webp), $color-input-bg;
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			background-size: 45%;
+		}
+	}
+}
+
+@media (max-width: 710px) {
+	.about {
+		&__item--electro {
+			background: url(../img/about/electro.webp), url(../img/about/electro-bg.webp), $color-input-bg;
+			background-repeat: no-repeat;
+			background-position: top right;
+			background-size: 40%;
+		}
+	}
+}
+
+@media (max-width: 415px) {
+	.about {
+		&__item--climate {
+			height: auto;
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	.about {
+		&__item--electro {
+			background: url(../img/about/electro.webp), url(../img/about/electro-bg.webp), $color-input-bg;
+			background-repeat: no-repeat;
+			background-position: top right;
+			background-size: 36%;
+		}
+
+		&__item--media {
+			background: url(../img/about/media.webp), $color-input-bg;
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			background-size: 40%;
+		}
+	}
+}

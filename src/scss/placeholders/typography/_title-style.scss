@@ -1,0 +1,12 @@
+%title-style {
+	font-size: clamp-px(34, 48);
+	line-height: $line-height-base;
+	color: $color-title;
+	font-weight: 700;
+}
+
+%h3-title-style {
+	font-size: clamp-px(22, 28);
+	color: $color-title;
+	font-weight: 700;
+}

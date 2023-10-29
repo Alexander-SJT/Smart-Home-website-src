@@ -1,0 +1,52 @@
+@media (max-width: 1024px) {
+	.sensors {
+		&__content {
+			flex-wrap: wrap;
+		}
+
+		&__type {
+			flex-basis: 48%;
+		}
+
+		&__type:last-child {
+			padding-top: 40px;
+			flex-basis: 100%;
+			background-size: contain;
+
+			.sensors__descr {
+				max-width: 60%;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.sensors {
+		&__type {
+			flex-basis: 100%;
+			padding-top: 30px;
+			background-size: contain;
+		}
+	}
+}
+
+@media (max-width: 430px) {
+	.sensors {
+		&__descr {
+			max-width: 100%;
+		}
+		&__type:nth-child(1),
+		&__type:nth-child(2),
+		&__type:nth-child(3) {
+			background-image: none;
+		}
+
+		&__type:last-child {
+			flex-basis: 100%;
+
+			.sensors__descr {
+				max-width: 100%;
+			}
+		}
+	}
+}

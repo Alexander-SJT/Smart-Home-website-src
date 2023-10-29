@@ -1,0 +1,46 @@
+//-  Details --> https://ogp.me/#no_vertical
+-
+    var og = {
+        disabled: false,
+        title: "", 
+        type: "", // "website" "article" "profile" "book" "music" "video"
+        img: {
+            url: (""), // (https://alexander-shulginov.github.io/Space/img/asd.webp)
+            alt: "", 
+            width: null, // (recommended: 1200x630px)
+            height: null, 
+        }, 
+        url: "", // page url
+        descr: "", 
+        siteName: "", 
+
+    }
+
+if !og.disabled
+
+    if og.title 
+        meta(property="og:title", content=og.title)
+
+    if og.type 
+        meta(property="og:type", content=og.type) 
+
+    if og.img.url 
+        meta(property="og:image", content=og.img.url) 
+
+    if og.img.alt 
+        meta(property="og:image:alt", content=og.img.alt) 
+
+    if og.img.width 
+        meta(property="og:image:width", content=og.img.width) 
+
+    if og.img.height 
+        meta(property="og:image:height", content=og.img.height) 
+
+    if og.url 
+        meta(property="og:url", content=og.url) 
+
+    if og.descr 
+        meta(property="og:description", content=og.descr) 
+
+    if og.siteName 
+        meta(property="og:site_name", content=og.siteName) 

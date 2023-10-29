@@ -1,0 +1,65 @@
+.header {
+	padding: clamp-px(16, 28) 0;
+	&__inner {
+		position: relative;
+
+		display: flex;
+		gap: clamp-px(10, 20);
+		align-items: center;
+		justify-content: space-between;
+
+		font-weight: 600;
+		color: $color-descr;
+	}
+
+	&__logo-link {
+		font-size: clamp-px(16, 20);
+		span {
+			color: $color-accent;
+		}
+	}
+
+	&__list {
+		display: flex;
+		gap: clamp-px(10, 20);
+		align-items: center;
+	}
+
+	&__link {
+		font-size: 14px;
+		border-bottom: 2px solid transparent;
+		transition: border-color 0.3s ease-in-out;
+
+		@media (any-hover: hover) {
+			&:hover {
+				border-color: $color-title;
+			}
+		}
+	}
+
+	&__phone-link {
+		position: relative;
+		border-bottom: 2px solid transparent;
+		transition: border-color 0.3s ease-in-out;
+		&::after {
+			@include bg-svg("phone");
+
+			content: "";
+
+			position: absolute;
+			top: -27%;
+			left: -21%;
+
+			width: 24px;
+			height: 24px;
+
+			background-repeat: no-repeat;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				border-color: $color-title;
+			}
+		}
+	}
+}

@@ -1,0 +1,106 @@
+.modal {
+	position: absolute;
+	top: 6%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 320;
+	width: 408px;
+	padding: clamp-px(25, 32) clamp-px(16, 20);
+	border-radius: 20px;
+	background-color: $color-input-bg;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+	&--isVisible {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	&__close {
+		width: 30px;
+		height: 30px;
+		display: block;
+		margin-bottom: 24px;
+		margin-left: auto;
+		background-color: transparent;
+		transition: background-color 0.3s ease-in-out;
+		cursor: pointer;
+		position: relative;
+		&::after {
+			content: "";
+			width: 3px;
+			height: 100%;
+			background-color: #909090;
+			border-radius: 3px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: rotate(45deg) translateX(-50%);
+			transition: background-color 0.3s ease-in-out;
+		}
+
+		&::before {
+			content: "";
+			width: 3px;
+			height: 100%;
+			background-color: #909090;
+			border-radius: 3px;
+			position: absolute;
+			top: 0;
+			right: 50%;
+			transform: rotate(-45deg) translateX(50%);
+			transition: background-color 0.3s ease-in-out;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				&::after,
+				&::before {
+					background-color: #000;
+				}
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: 24px;
+		font-size: clamp-px(22, 28);
+		font-weight: 700;
+		color: $color-title;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		margin-bottom: 34px;
+	}
+
+	&__label {
+		font-size: 17px;
+		font-weight: 500;
+	}
+
+	&__input {
+		display: block;
+		width: 100%;
+		margin-top: 16px;
+		padding: 16px;
+		border-radius: 8px;
+	}
+
+	&__btn {
+		padding: 10px 0;
+		border-radius: $radius-base;
+		color: $color-light;
+		background-color: $color-descr;
+		cursor: pointer;
+		transition: background-color 0.3s ease-in-out;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: lighten($color-descr, 7);
+			}
+		}
+	}
+}

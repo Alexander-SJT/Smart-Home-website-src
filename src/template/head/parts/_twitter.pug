@@ -1,0 +1,33 @@
+//- Details --> https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup
+-
+    var twitter = {
+        disabled: false,
+        title: null,  
+        type: null,  // <-- "summary_large_image" OR "summary"
+        img: {
+            url: null, //  (https://alexander-shulginov.github.io/Space/img/asd.webp)
+            alt: null,  
+        }, 
+        username: null, //  @username
+        descr: null, 
+    }
+
+if !twitter.disabled
+
+    if twitter.type
+        meta(name="twitter:card", content=twitter.type)
+
+    if twitter.username
+        meta(name="twitter:site", content=twitter.username)
+
+    if twitter.title 
+        meta(name="twitter:title", content=twitter.title)
+
+    if twitter.descr 
+        meta(name="twitter:description", content=twitter.descr)
+
+    if twitter.img.url 
+        meta(name="twitter:image", content=twitter.img.url)
+
+    if twitter.img.alt 
+        meta(name="twitter:image:alt", content=twitter.img.alt)

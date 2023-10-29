@@ -1,0 +1,8 @@
+.hero {
+	margin: 0 auto;
+	background: url(../icons/sprite.svg#grid), url(../img/hero/hero-bg.webp) bottom/cover;
+	background-repeat: repeat, no-repeat;
+	// background-size: cover;
+	position: relative;
+	padding-top: 18px;
+}

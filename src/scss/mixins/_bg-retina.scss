@@ -1,0 +1,14 @@
+$pathImg: "../img/";
+$formatImg: "webp";
+
+@mixin bg-retina($imgName) {
+	background-image: url("#{$pathImg}#{$imgName}.#{$formatImg}");
+
+	@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: url("#{$pathImg}#{$imgName}@2x.#{$formatImg}");
+	}
+
+	@media (min-resolution: 288dpi), (min-resolution: 3dppx) {
+		background-image: url("#{$pathImg}#{$imgName}@3x.#{$formatImg}");
+	}
+}

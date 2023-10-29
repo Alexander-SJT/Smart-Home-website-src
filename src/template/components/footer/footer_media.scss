@@ -1,0 +1,15 @@
+@media (max-width: 720px) {
+	.footer {
+		&__wrapper {
+			flex-wrap: wrap;
+		}
+	}
+}
+
+@media (max-width: 470px) {
+	.footer {
+		&__right-block {
+			flex-wrap: wrap;
+		}
+	}
+}

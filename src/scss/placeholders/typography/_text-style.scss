@@ -1,0 +1,21 @@
+%base-text-style {
+	font-size: clamp-px(15, 17);
+	color: $color-descr;
+	font-weight: 500;
+	line-height: $line-height-base;
+}
+
+%notes-style {
+	padding: 6px 14px;
+	border-radius: $radius-xxl;
+	background-color: $color-input-bg;
+	font-size: 14px;
+	font-weight: 600;
+	color: $color-notes;
+}
+
+%auto-style {
+	font-weight: 600;
+	font-size: 14px;
+	color: $color-light;
+}

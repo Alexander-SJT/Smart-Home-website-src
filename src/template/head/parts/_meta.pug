@@ -1,0 +1,31 @@
+-
+    var meta = {
+        title: "Tasks",
+        descr: "Умный дом под ключ российский производитель современной электрики",
+        applicationName: null, // for app, not site
+        robots: "index, follow", // or "noindex, nofollow"
+        utf: "UTF-8",
+        viewport: 'width=device-width, initial-scale=1.0',
+        XUACompatible: 'IE=edge'
+    }  
+
+if meta.utf 
+    meta(charset=meta.utf)
+
+if meta.viewport
+    meta(name="viewport", content=meta.viewport)
+
+if meta.XUACompatible
+    meta(http-equiv="X-UA-Compatible", content=meta.XUACompatible)
+
+if meta.applicationName 
+    meta(name="application-name", content=meta.applicationName)
+
+if meta.robots  
+    meta(name="robots", content=meta.robots)
+
+if meta.descr 
+    meta(name="description", content=meta.descr)
+
+if meta.title 
+    title= meta.title 

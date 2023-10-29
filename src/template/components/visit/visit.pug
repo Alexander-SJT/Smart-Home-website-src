@@ -1,0 +1,17 @@
+section.visit 
+    .container 
+        .visit__inner 
+            h2.visit__title 
+                | Когда вы хотите посетить шоурум?
+            form.visit__form
+                    label.visit__label(for="visit-input-name") Ваше имя*
+                        input.visit__input(type="text" id="visit-input-name" name="user-name" placeholder="Имя" required)
+                    label.visit__label(for="visit-input-phone") Ваш телефон*
+                        input.visit__input(type="tel" id="visit-input-phone" name="user-phone" placeholder="+7 900 300 25 90" required)
+                    label.visit__label(for="visit-input-mail") Ваша почта
+                        input.visit__input(type="email" id="visit-input-mail" name="user-phone" placeholder="Ваш email адрес")
+                    label.visit__label(for="visit-input-date") Дата
+                        input.visit__input.visit__input--date(type="date", name="input-date" id="visit-input-date" value="2028-12-12")
+                    button.visit__btn(type="submit") Записаться в шоурум
+            span.visit__notes 
+                | *обязательные поля

@@ -1,0 +1,56 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: $main-font;
+	background-color: $color-bg;
+	overflow-x: hidden;
+}
+
+a,
+button,
+input,
+textarea,
+select {
+	outline-offset: 2px;
+	outline-color: $color-accent;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+	padding: 0 clamp-px(7, 15);
+}
+
+.menu-overlay {
+	overflow: hidden;
+	&::after {
+		content: "";
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #00000086;
+		position: absolute;
+		z-index: 200;
+	}
+}
+
+.burger-overlay {
+	overflow: hidden;
+	&::after {
+		content: "";
+		top: 57px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #00000086;
+		position: absolute;
+		z-index: 200;
+	}
+}

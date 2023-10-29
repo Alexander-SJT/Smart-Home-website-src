@@ -1,0 +1,11 @@
+- var stylePath = "./css/";
+
+-
+    var styles = {
+        //- slider: "swiper-bundle.min.css",
+        css: "style.min.css",
+    }
+
+each style in styles
+    if style 
+        link(rel="stylesheet", href=`${stylePath}${style}`)

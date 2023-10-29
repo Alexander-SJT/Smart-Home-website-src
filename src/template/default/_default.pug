@@ -1,0 +1,18 @@
+- var pageLang = "ru";
+
+include ../mixins/_add-svg
+include ../mixins/_add-img
+include ../mixins/_add-img-retina
+
+doctype html
+html(lang=pageLang)
+
+    head
+        include ../head/_head
+
+    body
+        block hero-content
+        main.main
+            block main-content
+        block footer-content
+        include ./_scripts

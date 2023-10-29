@@ -1,0 +1,129 @@
+section.smart 
+    .smart__notes
+        h1.smart__title Умный дом <br> под ключ
+        p.smart__text российский производитель <br> современной электрики
+        button.smart__btn(type="button") 
+            span.smart__circle.btn-circle
+                +svg("arrow", "btn-icon", 14, 26)
+            span.smart__btn-text.btn-text Рассчиать <br> стоимость
+    .smart__content 
+        .smart__img-box
+            picture 
+                source(type="image/webp" media="(max-width: 765px)" srcset="./img/smart/smart-bg-mobile.webp")
+                img(src="./img/smart/smart-bg.webp" width="1300" height="1734" alt="Template smart house")
+            .smart__shadow-box.smart__shadow-box--light-position
+        .smart__content-wrap
+            .smart__item.smart__item--light-position
+                .smart__item-content
+                    .smart__item-img 
+                        img.smart__item-picture(src="./img/smart/light.webp", alt="Light", width="310" height="196")
+                    .smart__item-info
+                        h2.smart__item-title Освещение
+                        p.smart__item-descr Основное освещение меняет цвет (от холодного к теплому) и яркость свечения» в зависимости от времени суток.
+                .smart__name
+                    .smart__input-wrap
+                        input.smart__input(type="checkbox", id="select-light" name="light" checked)
+                        .smart__input-switch(aria-hidden="true")
+                    label.smart__label(for="select-light") Освещение  
+            .smart__item.smart__item--camera-position
+                .smart__item-content
+                    .smart__item-img 
+                        img.smart__item-picture(src="./img/smart/camera.webp", alt="Camera", width="310" height="196")
+                    .smart__item-info
+                        h2.smart__item-title Камеры
+                        p.smart__item-descr Вы можете в online режиме наблюдать за тем, что происходит пока вас нет дома.
+                .smart__name
+                    .smart__input-wrap
+                        input.smart__input(type="checkbox", id="select-camera" name="camera")
+                        .smart__input-switch(aria-hidden="true")
+                    label.smart__label(for="select-camera") Камеры
+            .smart__item.smart__item--wall-position
+                .smart__item-content
+                    .smart__item-img 
+                        img.smart__item-picture(src="./img/smart/wall.webp", alt="Wall", width="310" height="196")
+                    .smart__item-info
+                        h2.smart__item-title Ворота 
+                        p.smart__item-descr Удобное открытие и закрытие любых электроворот и электрозамков по вашей команде.
+                .smart__name
+                    .smart__input-wrap
+                        input.smart__input(type="checkbox", id="select-wall" name="wall")
+                        .smart__input-switch(aria-hidden="true")
+                    label.smart__label(for="select-wall") Ворота
+            .smart__item.smart__item--climate-position
+                .smart__item-content
+                    .smart__item-img 
+                        img.smart__item-picture(src="./img/smart/climate.webp", alt="Climate", width="310" height="196")
+                    .smart__item-info
+                        h2.smart__item-title Микроклимат
+                        p.smart__item-descr Умный дом знает, какая температура воздуха вам комфортна. Знает, как ее поддерживать.
+                .smart__name
+                    .smart__input-wrap
+                        input.smart__input(type="checkbox", id="select-climate" name="climate")
+                        .smart__input-switch(aria-hidden="true")
+                    label.smart__label(for="select-climate") Климат
+            .smart__item.smart__item--music-position
+                .smart__item-content
+                    .smart__item-img 
+                        img.smart__item-picture(src="./img/smart/music.webp", alt="Music", width="310" height="196")
+                    .smart__item-info
+                        h2.smart__item-title Музыка
+                        p.smart__item-descr Музыка в доме будет следовать за вами. Вы сможете отправлять голосовые сообщения в любую комнату.  
+                .smart__name
+                    .smart__input-wrap
+                        input.smart__input(type="checkbox", id="select-music" name="music")
+                        .smart__input-switch(aria-hidden="true")
+                    label.smart__label(for="select-music") Музыка
+            .smart__item.smart__item--clog-position
+                .smart__item-content
+                    .smart__item-img 
+                        img.smart__item-picture(src="./img/smart/clog.webp", alt="Clog", width="310" height="196")
+                    .smart__item-info
+                        h2.smart__item-title Защита от протечек
+                        p.smart__item-descr Датчик врезается в плитку и выглядит эстетично. При протечке система самостоятельно перекроет воду.
+                .smart__name
+                    .smart__input-wrap
+                        input.smart__input(type="checkbox", id="select-clog" name="clog")
+                        .smart__input-switch(aria-hidden="true")
+                    label.smart__label(for="select-clog") Протечка
+            .smart__item.smart__item--drapes-position
+                .smart__item-content
+                    .smart__item-img 
+                        img.smart__item-picture(src="./img/smart/drapes.webp", alt="Drapes", width="310" height="196")
+                    .smart__item-info
+                        h2.smart__item-title Шторы
+                        p.smart__item-descr Система самостоятельно откроет шторы или группы штор по времени суток или с вашей команды.
+                .smart__name
+                    .smart__input-wrap
+                        input.smart__input(type="checkbox", id="select-drapes" name="drapes")
+                        .smart__input-switch(aria-hidden="true")
+                    label.smart__label(for="select-drapes") Шторы
+        .swiper 
+            .swiper-wrapper 
+                .swiper-slide 
+                    .smart__item-info
+                        h2.smart__item-title Освещение
+                        p.smart__item-descr Основное освещение меняет цвет (от холодного к теплому) и яркость свечения» в зависимости от времени суток.
+                .swiper-slide 
+                    .smart__item-info
+                        h2.smart__item-title Камеры
+                        p.smart__item-descr Вы можете в online режиме наблюдать за тем, что происходит пока вас нет дома. 
+                .swiper-slide 
+                    .smart__item-info
+                        h2.smart__item-title Ворота 
+                        p.smart__item-descr Удобное открытие и закрытие любых электроворот и электрозамков по вашей команде.
+                .swiper-slide 
+                    .smart__item-info
+                        h2.smart__item-title Микроклимат
+                        p.smart__item-descr Умный дом знает, какая температура воздуха вам комфортна. Знает, как ее поддерживать.
+                .swiper-slide 
+                    .smart__item-info
+                        h2.smart__item-title Музыка
+                        p.smart__item-descr Музыка в доме будет следовать за вами. Вы сможете отправлять голосовые сообщения в любую комнату. 
+                .swiper-slide 
+                    .smart__item-info
+                        h2.smart__item-title Защита от протечек
+                        p.smart__item-descr Датчик врезается в плитку и выглядит эстетично. При протечке система самостоятельно перекроет воду.
+                .swiper-slide 
+                    .smart__item-info
+                        h2.smart__item-title Шторы
+                        p.smart__item-descr Система самостоятельно откроет шторы или группы штор по времени суток или с вашей команды.

@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+	.company {
+		&__list {
+			flex-wrap: wrap;
+		}
+		&__item {
+			flex-basis: 46%;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.company {
+		&__item {
+			flex-basis: 100%;
+		}
+	}
+}

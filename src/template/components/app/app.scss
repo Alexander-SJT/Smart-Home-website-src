@@ -1,0 +1,72 @@
+.app {
+	&__wrapper {
+		padding: clamp-px(40, 60) 0;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	&__title {
+		margin-bottom: clamp-px(30, 60);
+		@extend %title-style;
+		color: $color-light;
+		text-align: center;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: center;
+		gap: 40px;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		flex-basis: 47%;
+		height: clamp-px(230, 440);
+		padding: clamp-px(18, 40);
+		border-radius: $radius-xxl;
+
+		&:nth-child(1) {
+			background: url(../img/app/app-1.webp), url(../img/app/interior-1.webp);
+			background-repeat: no-repeat;
+			background-position: bottom right, center;
+			background-size: 70%, cover;
+		}
+
+		&:nth-child(2) {
+			background: url(../img/app/app-2.webp), url(../img/app/interior-2.webp);
+			background-repeat: no-repeat;
+			background-position: 90% 100%, center;
+			background-size: 30%, cover;
+		}
+
+		&:nth-child(3) {
+			background: url(../img/app/app-3.webp), url(../img/app/interior-3.webp);
+			background-repeat: no-repeat;
+			background-position: 90% 100%, center;
+			background-size: 30%, cover;
+		}
+
+		&:nth-child(4) {
+			background: url(../img/app/app-4.webp), url(../img/app/interior-4.webp);
+			background-repeat: no-repeat;
+			background-position: 90% 119%, center;
+			background-size: 30%, cover;
+		}
+	}
+
+	&__name {
+		max-width: 300px;
+		margin-bottom: 12px;
+		@extend %title-style;
+		color: $color-light;
+		font-size: clamp-px(26, 38);
+	}
+
+	&__descr {
+		max-width: 300px;
+		@extend %base-text-style;
+		color: $color-light;
+	}
+}
+

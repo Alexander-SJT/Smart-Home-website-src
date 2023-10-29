@@ -1,0 +1,23 @@
+@media (max-width: 1299px) {
+	.visit {
+		&__form {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__label {
+			flex-basis: 39%;
+		}
+
+		&__btn {
+		}
+	}
+}
+
+@media (max-width: 620px) {
+	.visit {
+		&__label {
+			flex-basis: 100%;
+		}
+	}
+}

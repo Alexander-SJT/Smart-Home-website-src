@@ -1,0 +1,63 @@
+.visit {
+
+	&__inner {
+		padding: clamp-px(16, 40);
+		background: url(../img/showroom/showroom-icon.webp), linear-gradient(309deg, rgba(0, 240, 255, 0) 0%, rgba(0, 178, 255, 0.3) 100%), linear-gradient(127deg, rgba(255, 153, 0, 0) 0%, rgba(255, 153, 0, 0.3) 100%), #e8e8e8;
+		backdrop-filter: blur(11px);
+		background-repeat: no-repeat;
+		border-radius: $radius-large;
+	}
+
+	&__title {
+		max-width: 596px;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: clamp-px(30, 64);
+		@extend %title-style;
+		font-size: clamp-px(22, 38);
+	}
+
+	&__form {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 16px;
+		margin-bottom: 8px;
+	}
+
+	&__label {
+		@extend %base-text-style;
+        flex-basis: 220px;
+	}
+
+	&__input {
+		margin-top: clamp-px(8, 16);
+        width: 100%;
+		padding: 16px;
+		border-radius: 8px;
+	}
+
+    &__input--date {
+        height: 48px;
+    }
+
+	&__btn {
+        display: block;
+		align-self: flex-end;
+		padding: 18px 55px;
+		border-radius: $radius-base;
+		color: $color-light;
+		background-color: $color-accent-btn;
+		cursor: pointer;
+		transition: background-color 0.3s ease-in-out;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: darken($color-accent-btn, 7);
+			}
+		}
+	}
+
+	&__notes {
+		@extend %base-text-style;
+	}
+}

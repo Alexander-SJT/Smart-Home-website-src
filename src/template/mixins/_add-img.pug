@@ -1,0 +1,2 @@
+mixin img(name, class_name, width, height, alt, loading="eager", format="webp", basePath="./img/")
+    img(class=class_name, src=`${basePath}${name}.${format}`, width=width, height=height, alt=alt, loading=loading)

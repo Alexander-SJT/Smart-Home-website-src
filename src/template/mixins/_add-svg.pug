@@ -1,0 +1,3 @@
+mixin svg(name, class_name, width, height)
+    svg(class=class_name, width=width, height=height)
+        use(xlink:href=`./icons/sprite.svg#${name}`)

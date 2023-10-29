@@ -1,0 +1,43 @@
+.time {
+	margin-bottom: 33px; //!
+	padding-top: clamp-px(40, 80);
+
+	&__inner {
+		padding-top: clamp-px(22, 34);
+		padding-bottom: clamp-px(34, 53);
+		padding-left: clamp-px(45, 70);
+
+		background: url(../icons/sprite.svg#time-icon),
+			url(../img/time/time-bg.webp);
+		background-repeat: no-repeat;
+		background-position: 270% 52%, center;
+		background-size: 85%, cover;
+		border-radius: $radius-large;
+	}
+
+	&__notes {
+		@extend %notes-style;
+
+		display: inline-block;
+		margin-bottom: clamp-px(18, 28);
+		color: $color-title;
+	}
+
+	&__title {
+		@extend %title-style;
+
+		margin-bottom: clamp-px(16, 22);
+	}
+
+	&__descr {
+		@extend %base-text-style;
+
+		max-width: 440px;
+		margin-bottom: clamp-px(16, 22);
+		color: $color-title;
+	}
+
+	&__btn {
+		@extend %btn-base;
+	}
+}

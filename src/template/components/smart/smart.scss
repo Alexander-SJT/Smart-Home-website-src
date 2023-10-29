@@ -1,0 +1,282 @@
+.smart {
+	position: relative;
+
+	&__notes {
+		position: absolute;
+		z-index: 200;
+		top: 1%;
+		left: 50%;
+		transform: translateX(-50%);
+
+		text-align: center;
+	}
+
+	&__title {
+		margin-bottom: 12px;
+		font-size: clamp-px(36, 66);
+		font-weight: 700;
+		color: $color-title;
+	}
+
+	&__text {
+		@extend %base-text-style;
+
+		margin-bottom: clamp-px(20, 32);
+	}
+
+	&__btn {
+		@extend %btn-price;
+	}
+
+	&__content {
+		position: relative;
+		overflow: hidden;
+	}
+
+	&__content-wrap {
+		padding: 20px 0;
+	}
+
+	&__img-box {
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 12px;
+		border-radius: $radius-xxl;
+	}
+
+	&__shadow-box {
+		position: absolute;
+		display: none;
+		border-radius: 15px;
+		box-shadow: 3px 3px 100px 1000px #00000096;
+	}
+
+	&__shadow-box--light-position {
+		top: 55%;
+		left: 4%;
+		width: clamp-px(70, 136, 320, 765);
+		height: clamp-px(84, 150, 320, 765);
+	}
+
+	&__shadow-box--camera-position {
+		top: 74%;
+		left: 5%;
+		width: clamp-px(55, 115, 320, 765);
+		height: clamp-px(45, 100, 320, 765);
+	}
+
+	&__shadow-box--wall-position {
+		top: 76%;
+		left: 16%;
+		width: clamp-px(72, 171, 320, 765);
+		height: clamp-px(80, 186, 320, 765);
+	}
+
+	&__shadow-box--climate-position {
+		top: 55%;
+		left: 58%;
+		width: clamp-px(43, 100, 320, 765);
+		height: clamp-px(31, 70, 320, 765);
+	}
+
+	&__shadow-box--music-position {
+		top: 53%;
+		left: 77%;
+		width: clamp-px(66, 146, 320, 765);
+		height: clamp-px(60, 145, 320, 765);
+	}
+
+	&__shadow-box--clog-position {
+		top: 12%;
+		left: 64%;
+		width: clamp-px(45, 105, 320, 765);
+		height: clamp-px(78, 164, 320, 765);
+	}
+
+	&__shadow-box--drapes-position {
+		top: 36%;
+		left: 30%;
+		width: clamp-px(72, 169, 320, 765);
+		height: clamp-px(70, 165, 320, 765);
+	}
+
+	&__item {
+		position: absolute;
+		padding-left: clamp-px(6, 16, 769, 1300);
+		background-color: $color-light;
+		border-radius: $radius-base;
+	}
+
+	&__item--light-position {
+		top: 51%;
+		right: 76%;
+
+		.smart__item-content {
+			left: 0;
+		}
+	}
+
+	&__item--camera-position {
+		top: 68%;
+		right: 81%;
+
+		.smart__item-content {
+			left: 0;
+		}
+	}
+
+	&__item--wall-position {
+		top: 75%;
+		left: 42%;
+
+		.smart__item-content {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&__item--climate-position {
+		top: 58%;
+		left: 47%;
+		.smart__item-content {
+			top: 115%;
+			bottom: unset;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&__item--music-position {
+		top: 63.5%;
+		left: 80%;
+		.smart__item-content {
+			right: 0;
+		}
+	}
+
+	&__item--clog-position {
+		top: 34%;
+		left: 72%;
+		.smart__item-content {
+			top: 115%;
+			right: 0;
+			bottom: unset;
+		}
+	}
+
+	&__item--drapes-position {
+		top: 44%;
+		left: 44%;
+		.smart__item-content {
+			top: 115%;
+			bottom: unset;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&__item-content {
+		position: absolute;
+		z-index: 100;
+		bottom: 115%;
+
+		width: 310px;
+
+		visibility: hidden;
+		opacity: 0;
+		background-color: $color-light;
+		border-radius: $radius-large;
+		box-shadow: 0px 34px 74px 0px rgba(0, 0, 0, 0.1);
+
+		transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	}
+
+	&__item-content--isVisible {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	&__item-picture {
+		border-top-left-radius: $radius-large;
+		border-top-right-radius: $radius-large;
+	}
+
+	&__item-img {
+		margin-bottom: 20px;
+	}
+
+	&__item-info {
+		padding: 0 20px 20px 20px;
+	}
+
+	&__item-title {
+		margin-bottom: 12px;
+		font-size: clamp-px(18, 20);
+		font-weight: 500;
+		color: $color-title;
+	}
+
+	&__item-descr {
+		@extend %base-text-style;
+
+		color: $color-hero-descr;
+	}
+
+	&__name {
+		display: flex;
+		gap: 8px;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__label {
+		padding: clamp-px(12, 16, 769, 1300) clamp-px(9, 16, 769, 1300)
+			clamp-px(11, 16, 769, 1300) 0;
+		font-size: clamp-px(16, 20);
+		font-weight: 500;
+		background-color: transparent;
+	}
+
+	&__input-wrap {
+		position: relative;
+		margin-top: 3px;
+	}
+
+	&__input-switch {
+		position: absolute;
+		top: 7%;
+		right: 4%;
+
+		width: 27px;
+		height: 26px;
+
+		background-color: $color-input-switch;
+		border-radius: 50%;
+	}
+
+	&__input {
+		cursor: pointer;
+
+		position: relative;
+
+		width: 51px;
+		height: 31px;
+
+		appearance: none;
+		background-color: $color-input-bg;
+		border: none;
+		border-radius: $radius-base;
+
+		transition: background-color 0.3s ease-in-out;
+		&:checked {
+			background-color: $color-input-accent;
+		}
+		&:checked + .smart__input-switch {
+			left: 4%;
+		}
+	}
+}
+
+.swiper {
+	display: none;
+}

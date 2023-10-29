@@ -1,0 +1,31 @@
+@media (max-width: 778px) {
+	.time {
+		&__descr {
+			max-width: 310px;
+		}
+	}
+}
+
+@media (max-width: 625px) {
+	.time {
+		&__inner {
+			padding-left: 16px;
+			padding-right: 16px;
+			height: clamp-px(400, 500, 320, 625);
+			background: url(../icons/sprite.svg#time-icon), url(../img/time/time-bg.webp);
+			background-repeat: no-repeat;
+			background-position: 270% 52%, center;
+			background-position: right bottom, center;
+			background-size: contain, cover;
+		}
+
+		&__descr {
+			max-width: 100%;
+		}
+
+		&__btn {
+			color: $color-light;
+			background-color: $color-descr;
+		}
+	}
+}

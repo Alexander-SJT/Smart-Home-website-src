@@ -1,0 +1,62 @@
+.sensors {
+	&__inner {
+		padding: 0 15px; //!
+		padding-top: clamp-px(40, 60);
+		background: url(../img/hero/hero-bg.webp), url(../img/sensors/sensors-bg.webp), $color-title;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		padding-bottom: 40px;
+		border-bottom-right-radius: $radius-large;
+		border-bottom-left-radius: $radius-large;
+	}
+
+	&__title {
+		margin-bottom: clamp-px(20, 40);
+		@extend %title-style;
+		color: $color-light;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		gap: clamp-px(20, 40);
+	}
+
+	&__type {
+		flex-basis: 380px;
+		padding-top: clamp-px(100, 187);
+		padding-right: clamp-px(12, 44);
+		padding-bottom: clamp-px(12, 34);
+		padding-left: clamp-px(12, 42);
+		border-radius: $radius-large;
+		background: rgba(255, 255, 255, 0.05);
+		backdrop-filter: blur(132px);
+		background-repeat: no-repeat;
+		background-position: top right;
+	}
+
+	&__type:nth-child(1) {
+		background-image: url(../img/sensors/sensor-1.webp);
+	}
+
+	&__type:nth-child(2) {
+		background-image: url(../img/sensors/sensor-2.webp);
+	}
+
+	&__type:nth-child(3) {
+		background-image: url(../img/sensors/sensor-3.webp);
+	}
+
+	&__name {
+		margin-bottom: 12px;
+		@extend %h3-title-style;
+		color: $color-light;
+	}
+
+	&__descr {
+		max-width: 296px;
+		@extend %base-text-style;
+		color: $color-light;
+	}
+}

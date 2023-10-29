@@ -1,0 +1,14 @@
+@media (max-width: 768px){
+    .showroom {
+        &__info {
+            flex-wrap: wrap;
+            gap: 36px;
+        }
+
+        &__item {
+            flex-basis: 100%;
+
+        }
+    }
+    
+}

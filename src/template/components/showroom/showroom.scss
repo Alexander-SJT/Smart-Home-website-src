@@ -1,0 +1,43 @@
+.showroom {
+	padding: clamp-px(40, 60) 0;
+
+	&__title {
+		margin-bottom: 20px;
+		text-align: center;
+		@extend %title-style;
+	}
+
+	&__descr {
+		max-width: 444px;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: clamp-px(30, 80);
+		@extend %base-text-style;
+	}
+
+	&__img {
+		margin-bottom: clamp-px(30, 80);
+		border-radius: $radius-large;
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 26px;
+	}
+
+	&__item {
+        flex-basis: 310px;
+		text-align: center;
+	}
+
+	&__name {
+		margin-bottom: 12px;
+		@extend %h3-title-style;
+	}
+
+	&__text {
+		@extend %base-text-style;
+	}
+}

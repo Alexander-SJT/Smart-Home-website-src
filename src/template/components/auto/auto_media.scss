@@ -1,0 +1,44 @@
+@media (max-width: 1078px) {
+	.auto {
+		&__wrapper {
+			flex-direction: column;
+			align-items: center;
+			border-top: none;
+		}
+
+		&__demo {
+			border-top: 2px solid $color-light;
+		}
+	}
+}
+
+@media (max-width: 520px) {
+	.auto {
+		&__info {
+			margin-left: 0;
+		}
+		&__demo {
+			max-width: 307px;
+			border-top: none;
+			flex-direction: column;
+			border-left: 2px solid $color-light;
+		}
+
+		&__item {
+			position: relative;
+			padding-top: 0;
+			padding-left: clamp-px(28, 40);
+			&::after {
+				content: "";
+				width: 23px;
+				height: 2px;
+			}
+		}
+
+		&__block {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}

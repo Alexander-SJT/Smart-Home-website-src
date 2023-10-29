@@ -1,0 +1,100 @@
+.about {
+	margin-bottom: 24px;
+	padding-top: clamp-px(40, 80);
+
+	&__container {
+		max-width: 1150px;
+		margin: 0 auto;
+		padding: 0 clamp-px(8, 15);
+		overflow: hidden;
+	}
+
+	&__info {
+		max-width: 353px;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: clamp-px(30, 64);
+	}
+
+	&__notes {
+		@extend %notes-style;
+	}
+
+	&__title {
+		margin: 20px 0;
+		@extend %title-style;
+	}
+
+	&__descr {
+		@extend %base-text-style;
+	}
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		gap: clamp-px(12, 24);
+		margin-bottom: clamp-px(12, 24);
+	}
+
+	&__item {
+		height: clamp-px(230, 343);
+		padding: clamp-px(30, 52) clamp-px(8, 60);
+		border-radius: $radius-large;
+		width: 100%;
+	}
+
+	&__item--electro {
+		background: url(../img/about/electro.webp), url(../img/about/electro-bg.webp), $color-input-bg;
+		background-repeat: no-repeat;
+		background-position: top right;
+		margin-bottom: clamp-px(12, 24);
+	}
+
+	&__item--light {
+		width: 80%;
+		background: url(../img/about/light.webp), $color-input-bg;
+		background-repeat: no-repeat;
+		background-position: bottom right;
+		background-size: 53%;
+	}
+
+	&__item--safe {
+		background: url(../img/about/safe.webp), $color-input-bg;
+		background-repeat: no-repeat;
+		background-position: bottom right;
+		background-size: 50%;
+	}
+
+	&__item--climate {
+		background: url(../img/about/climate.webp), $color-input-bg;
+		background-repeat: no-repeat;
+		background-position: center right;
+		background-size: 50%;
+	}
+
+	&__item--drapes {
+		width: 80%;
+		background: url(../img/about/drapes.webp), $color-input-bg;
+		background-repeat: no-repeat;
+		background-position: bottom right;
+		background-size: 70%;
+	}
+
+	&__item--media {
+		background: url(../img/about/media.webp), $color-input-bg;
+		background-repeat: no-repeat;
+		background-position: bottom right;
+		background-size: contain;
+	}
+
+	&__content-title {
+		margin-bottom: 16px;
+		@extend %title-style;
+	}
+
+	&__list-item {
+		@extend %base-text-style;
+		list-style: disc;
+		list-style-position: inside;
+	}
+}

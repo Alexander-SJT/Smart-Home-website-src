@@ -1,0 +1,3 @@
+@function offset($value, $coef: 2) {
+	@return clamp-px(calc($value / $coef), $value);
+}

@@ -1,0 +1,92 @@
+.auto {
+	padding-top: clamp-px(80, 120);
+
+	&__inner {
+		padding-top: clamp-px(30, 64);
+		padding-bottom: clamp-px(40, 80);
+		padding-left: clamp-px(20, 40);
+		padding-right: clamp-px(20, 40);
+		background-image: url(../img/auto/auto-bg.webp);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		border-top-left-radius: $radius-large;
+		border-top-right-radius: $radius-large;
+	}
+
+	&__info {
+		max-width: 500px;
+		margin-left: clamp-px(20, 47);
+		margin-bottom: clamp-px(30, 67);
+	}
+
+	&__title {
+		margin-bottom: 12px;
+		@extend %title-style;
+		color: $color-light;
+		line-height: 0.9;
+	}
+
+	&__descr {
+		@extend %base-text-style;
+		color: $color-light;
+	}
+
+	&__wrapper {
+		display: flex;
+		gap: 16px;
+		border-top: 2px solid $color-light;
+	}
+
+	&__demo {
+		display: flex;
+		gap: 16px; //!
+	}
+
+	&__item {
+		padding-top: 55px;
+		position: relative;
+		&::after {
+			content: "";
+			width: 2px;
+			height: 23px;
+			background-color: $color-light;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	&__text {
+		display: inline-block;
+		margin-bottom: 12px;
+		@extend %auto-style;
+	}
+
+	&__block {
+		padding: clamp-px(10, 20);
+		border-radius: $radius-base;
+		background: rgba(255, 255, 255, 0.3);
+		backdrop-filter: blur(11px);
+		margin-bottom: 12px;
+	}
+
+	&__block-container {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		margin-bottom: 8px;
+		@extend %auto-style;
+	}
+
+	&__block-text {
+		padding: 8px;
+		border-radius: $radius-base;
+		background: rgba(255, 255, 255, 0.1);
+	}
+
+	&__block-action {
+		@extend %auto-style;
+		font-weight: 300;
+	}
+}

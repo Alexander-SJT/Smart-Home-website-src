@@ -1,0 +1,8 @@
+{
+	"plugins": ["stylelint-scss"],
+	"extends": [
+		"stylelint-config-clean-order",
+		"stylelint-config-recommended-scss"
+	],
+	"ignoreFiles": ["./build/css/*.css", "./src/scss/lib/*.scss"]
+}

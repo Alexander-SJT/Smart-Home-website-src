@@ -1,0 +1,56 @@
+%btn-price {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin: 0 auto;
+	padding: 12px 20px 12px 12px;
+	border-radius: 45px;
+	font-size: clamp-px(15, 17);
+	color: $color-light;
+	background-color: $color-descr;
+	font-weight: 600;
+	transition: background-color 0.3s ease-in-out;
+	cursor: pointer;
+
+	.btn-circle {
+		width: 59px;
+		height: 59px;
+		border-radius: 59px;
+		background: linear-gradient(135deg, #fc891c 14.04%, #f6fcff 84.45%);
+	}
+
+	.btn-icon {
+		position: relative;
+		left: 16%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.btn-text {
+		transition: transform 0.3s ease-in-out;
+	}
+
+	&:hover {
+		background-color: lighten($color-descr, 7);
+		.btn-text {
+			transform: scale(1.05);
+		}
+	}
+}
+
+%btn-base {
+	padding: 10px clamp-px(20, 30);
+	border-radius: $radius-base;
+	font-size: 14px;
+	font-weight: 600;
+	color: $color-title;
+	background-color: $color-accent-btn;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: darken($color-accent-btn, 5);
+		}
+	}
+}
