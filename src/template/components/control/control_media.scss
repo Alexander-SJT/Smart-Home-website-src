@@ -1,16 +1,14 @@
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 	.control {
 		&__info {
 			position: static;
 			margin-bottom: clamp-px(20, 36);
+			text-align: center;
 		}
 
 		&__inner {
 			flex-direction: column;
-		}
-
-		&__info {
-			text-align: center;
+			align-items: center;
 		}
 
 		&__title {
@@ -39,10 +37,10 @@
 	}
 }
 
-@media (max-width: 375px){
-    .control {
-        &__picture {
-            width: 228px;
-        }
-    }
+@media (max-width: 375px) {
+	.control {
+		&__picture {
+			width: 228px;
+		}
+	}
 }

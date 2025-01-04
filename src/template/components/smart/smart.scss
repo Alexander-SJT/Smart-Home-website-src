@@ -4,7 +4,7 @@
 	&__notes {
 		position: absolute;
 		z-index: 200;
-		top: 1%;
+		top: 4%;
 		left: 50%;
 		transform: translateX(-50%);
 
@@ -104,7 +104,7 @@
 		position: absolute;
 		padding-left: clamp-px(6, 16, 769, 1300);
 		background-color: $color-light;
-		border-radius: $radius-base;
+		border-radius: 8px;
 	}
 
 	&__item--light-position {
@@ -243,9 +243,12 @@
 	}
 
 	&__input-switch {
+		pointer-events: none;
+		cursor: pointer;
+
 		position: absolute;
 		top: 7%;
-		right: 4%;
+		right: 6%;
 
 		width: 27px;
 		height: 26px;
@@ -265,14 +268,14 @@
 		appearance: none;
 		background-color: $color-input-bg;
 		border: none;
-		border-radius: $radius-base;
+		border-radius: 14px;
 
 		transition: background-color 0.3s ease-in-out;
 		&:checked {
 			background-color: $color-input-accent;
 		}
 		&:checked + .smart__input-switch {
-			left: 4%;
+			left: 6%;
 		}
 	}
 }

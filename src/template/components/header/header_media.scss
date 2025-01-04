@@ -1,5 +1,7 @@
-@media (max-width: 1024px) {
+@media (max-width: 1064px) {
 	.header {
+		padding: 16px 0;
+
 		&__nav {
 			position: absolute;
 			z-index: 250;
@@ -45,24 +47,13 @@
 
 		&__item {
 			width: 100%;
+			text-align: center;
 		}
 
 		&__link {
-			display: block;
-
+			display: inline-block;
 			padding: 16px 0;
-
-			text-align: center;
-
-			border-radius: $radius-large;
-
 			transition: background-color 0.3s ease-in-out;
-
-			@media (any-hover: hover) {
-				&:hover {
-					background-color: $color-hero-descr;
-				}
-			}
 		}
 	}
 }

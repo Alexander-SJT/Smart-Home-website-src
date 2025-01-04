@@ -1,16 +1,15 @@
 @media (max-width: 1024px) {
 	.sensors {
 		&__content {
-			flex-wrap: wrap;
+			flex-direction: column;
 		}
 
 		&__type {
-			flex-basis: 48%;
+			padding: 36px;
 		}
 
 		&__type:last-child {
 			padding-top: 40px;
-			flex-basis: 100%;
 			background-size: contain;
 
 			.sensors__descr {
@@ -23,7 +22,6 @@
 @media (max-width: 768px) {
 	.sensors {
 		&__type {
-			flex-basis: 100%;
 			padding-top: 30px;
 			background-size: contain;
 		}

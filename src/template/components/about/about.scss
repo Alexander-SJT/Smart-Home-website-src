@@ -3,17 +3,19 @@
 	padding-top: clamp-px(40, 80);
 
 	&__container {
+		overflow: hidden;
 		max-width: 1150px;
 		margin: 0 auto;
 		padding: 0 clamp-px(8, 15);
-		overflow: hidden;
 	}
 
 	&__info {
 		max-width: 353px;
 		margin: 0 auto;
-		text-align: center;
 		margin-bottom: clamp-px(30, 64);
+		padding-top: 6px;
+
+		text-align: center;
 	}
 
 	&__notes {
@@ -21,8 +23,9 @@
 	}
 
 	&__title {
-		margin: 20px 0;
 		@extend %title-style;
+
+		margin: 20px 0;
 	}
 
 	&__descr {
@@ -31,31 +34,33 @@
 
 	&__box {
 		display: flex;
-		justify-content: space-between;
 		gap: clamp-px(12, 24);
+		justify-content: space-between;
 		margin-bottom: clamp-px(12, 24);
 	}
 
 	&__item {
+		width: 100%;
 		height: clamp-px(230, 343);
 		padding: clamp-px(30, 52) clamp-px(8, 60);
 		border-radius: $radius-large;
-		width: 100%;
 	}
 
 	&__item--electro {
-		background: url(../img/about/electro.webp), url(../img/about/electro-bg.webp), $color-input-bg;
+		margin-bottom: clamp-px(12, 24);
+		background: url(../img/about/electro.webp),
+			url(../img/about/electro-bg.webp), $color-input-bg;
 		background-repeat: no-repeat;
 		background-position: top right;
-		margin-bottom: clamp-px(12, 24);
 	}
 
 	&__item--light {
 		width: 80%;
+
 		background: url(../img/about/light.webp), $color-input-bg;
 		background-repeat: no-repeat;
 		background-position: bottom right;
-		background-size: 53%;
+		background-size: 37%;
 	}
 
 	&__item--safe {
@@ -74,6 +79,7 @@
 
 	&__item--drapes {
 		width: 80%;
+
 		background: url(../img/about/drapes.webp), $color-input-bg;
 		background-repeat: no-repeat;
 		background-position: bottom right;
@@ -88,12 +94,14 @@
 	}
 
 	&__content-title {
-		margin-bottom: 16px;
 		@extend %title-style;
+
+		margin-bottom: 16px;
 	}
 
 	&__list-item {
 		@extend %base-text-style;
+
 		list-style: disc;
 		list-style-position: inside;
 	}
