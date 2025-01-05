@@ -1,5 +1,5 @@
 .footer {
-	padding-bottom: clamp-px(50, 120);
+	padding-bottom: 40px;
 	&__wrapper {
 		display: flex;
 		gap: clamp-px(20, 76);
@@ -102,7 +102,7 @@
 			height: 22px;
 			margin-right: 12px;
 
-			vertical-align: middle;
+			vertical-align: text-top;
 
 			background-repeat: no-repeat;
 			background-size: contain;

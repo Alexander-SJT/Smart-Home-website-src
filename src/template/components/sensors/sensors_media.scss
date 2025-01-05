@@ -8,6 +8,12 @@
 			padding: 36px;
 		}
 
+		&__type:nth-child(1),
+		&__type:nth-child(2),
+		&__type:nth-child(3) {
+			background-size: contain;
+		}
+
 		&__type:last-child {
 			padding-top: 40px;
 			background-size: contain;
@@ -28,7 +34,7 @@
 	}
 }
 
-@media (max-width: 430px) {
+@media (max-width: 530px) {
 	.sensors {
 		&__descr {
 			max-width: 100%;

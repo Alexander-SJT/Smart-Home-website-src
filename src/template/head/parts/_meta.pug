@@ -2,6 +2,7 @@
     var meta = {
         title: "HOME Smart",
         descr: "Умный дом под ключ российский производитель современной электрики",
+        author: "Alexander Shulginov",
         applicationName: null, // for app, not site
         robots: "index, follow", // or "noindex, nofollow"
         utf: "UTF-8",
@@ -26,6 +27,7 @@ if meta.robots
 
 if meta.descr 
     meta(name="description", content=meta.descr)
+    meta(name="author", content=meta.author)
 
 if meta.title 
     title= meta.title 

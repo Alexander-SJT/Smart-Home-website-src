@@ -2,7 +2,6 @@
 	&__inner {
 		padding: 0 15px; //!
 		padding-top: clamp-px(40, 60);
-		padding-bottom: 40px;
 
 		background: url(../img/hero/hero-bg.webp),
 			url(../img/sensors/sensors-bg.webp), $color-title;
@@ -27,7 +26,6 @@
 	}
 
 	&__type {
-
 		width: 100%;
 		padding-top: clamp-px(100, 187);
 		padding-right: clamp-px(12, 44);
@@ -36,21 +34,26 @@
 
 		background: rgba(255, 255, 255, 0.05);
 		background-repeat: no-repeat;
-		background-position: top right;
+		background-position-x: 100%;
+		background-position-y: 10%;
 		backdrop-filter: blur(132px);
 		border-radius: $radius-large;
 	}
 
 	&__type:nth-child(1) {
 		background-image: url(../img/sensors/sensor-1.webp);
+		background-position-y: 0%;
+		background-size: 100px;
 	}
 
 	&__type:nth-child(2) {
 		background-image: url(../img/sensors/sensor-2.webp);
+		background-size: 250px;
 	}
 
 	&__type:nth-child(3) {
 		background-image: url(../img/sensors/sensor-3.webp);
+		background-size: 200px;
 	}
 
 	&__name {

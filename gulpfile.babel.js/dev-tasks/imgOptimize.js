@@ -28,7 +28,7 @@ const pathForRetinaImg = './src/img/_retina-optimize/';
 export default async function imgOptimize() {
 	gulp.src([paths.img.src, `!${pathForRetinaImg}**/*`])
 		.pipe(cached('responsiveImg'))
-		.pipe(responsiveImg(configImg.responsiveOptions))
+		// .pipe(responsiveImg(configImg.responsiveOptions))
 		.pipe(webp())
 		.pipe(gulp.dest(pathForRetinaImg))
 		.pipe(bs.stream())
